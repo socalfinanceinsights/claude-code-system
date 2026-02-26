@@ -26,7 +26,7 @@ function parseEmailFromNote(noteBody) {
   if (!matches) return null;
 
   // Excluded domains (internal/recruiter emails)
-  const excludedDomains = ['allianceresourcegroup.com', 'bullhorn.com'];
+  const excludedDomains = ['bullhorn.com'];
 
   // Find first email that's NOT from excluded domains
   for (const email of matches) {
